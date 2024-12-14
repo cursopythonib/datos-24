@@ -1,0 +1,21 @@
+|icono| Primer problema
+========================
+
+.. |icono| image:: _static/question-circle.svg
+	   :width: 52
+
+Este es el enunciado del segundo ejercicio
+
+1. Utilizando lo aprendido, resuelva este problema
+
+2. Documente el código
+
+3. Arregle los errores
+
+
+..
+   En `el archivo <_static/nba.html>`_ hay una tabla con estadística actual de la liga de básquet estadounidense NBA. Escriba un programa en python para analizar estos datos:   
+..
+   1. Utilizando técnicas de *web scrapping* extraiga la información de dicha página
+   2. Asigne la información a un dataframe de pandas
+   3. Analice los datos   

@@ -1,0 +1,14 @@
+|icono| Segundo problema
+========================
+
+.. |icono| image:: _static/question-circle.svg
+	   :width: 52
+
+
+Este es el enunciado del segundo ejercicio
+
+1. Utilizando lo aprendido, resuelva este problema
+
+2. Documente el código
+
+3. Arregle los errores

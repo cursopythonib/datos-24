@@ -1,0 +1,65 @@
+.. Examen Final IPyIC documentation master file
+   It should contain at least the root `toctree` directive.
+
+#################################
+|examen| Examen Final IPyICD 2024
+#################################
+.. |examen| image:: _static/user-graduate.svg
+	    :width: 52
+
+:Institución: Instituto Balseiro - Univ. Nac. de Cuyo
+:Fecha: |today|
+:Docentes: Juan Fiol y Flavio Colavecchia
+
+El examen final consiste en la resolución de dos problemas.
+
+
+.. raw:: html
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 d-flex">
+          <a class="reference internal" href="ejercicio1.html"><span class="std std-ref">
+              <div class="card text-center intro-card shadow">
+                <img src="_static/question-circle.svg" class="card-img-top" alt="fas chart-line icon" width="60">
+                <div class="card-body flex-fill">
+                  <h5 class="card-title">Ejercicio 1</h5>
+                  <p class="card-text">Este es un ejercicio que se nos ocurrió. Realizará un programa para hacer algo muy interesante.</p>
+                </div>
+              </span></a>
+              </div>
+        </div>
+
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 d-flex">
+      <a class="reference internal" href="ejercicio2.html"><span class="std std-ref">
+        <div class="card text-center intro-card shadow">
+           <img src="_static/question-circle.svg" class="card-img-top" alt="fas chart-line icon" width="60">
+                <div class="card-body flex-fill">
+                  <h5 class="card-title">Ejercicio 2</h5>
+                  <p class="card-text">Este es un ejercicio que se nos ocurrió. Realizará un programa para hacer algo muy interesante.</p>
+                </div>
+          </span></a>
+          </div>
+        </div>
+	
+      </div>
+    </div>
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Problemas:
+   :hidden:
+
+   ejercicio1
+   ejercicio2
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Información:
+   :hidden:
+
+..
+   lineamientos
+   pmp
+
+   
