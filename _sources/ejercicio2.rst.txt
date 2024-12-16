@@ -1,14 +1,46 @@
-|icono| Segundo problema
-========================
+|icono| Análisis de código: Problema de niveles
+===============================================
 
 .. |icono| image:: _static/question-circle.svg
 	   :width: 52
 
+Se define un *nivel* como una colección de números naturales.
+Un nivel tiene status de *válido* si la colección de números es
+estrictamente ascendente o estrictamente descendente. En caso contrario
+el nivel se declara *inválido* . Por ejemplo,
+``[9, 7, 6, 2, 1]`` es descendente, dado que 9 > 7 > 6 > 2 >1. El nivel
+``[1, 2, 3, 4, 7]`` es ascendente ya que  1 < 2 < 3 < 4 < 7.
+Ambos son niveles válidos. Sin embargo, ``[7, 9, 6, 2, 1]`` es un nivel 
+inválido, dado que 7 < 9, pero 9 > 6 > 2 > 1. El nivel
+``[2, 2, 1]`` tampoco es un nivel válido ya que los dos primeros valores
+son iguales.
 
-Este es el enunciado del segundo ejercicio
+Existe una tercera categoría para el status de un nivel. 
+Un nivel se define como *tolerable* si y sólo si removiendo
+**exactamente** uno de sus elementos, el nivel es estrictamente
+descendente o ascendente. Por ejemplo, ``[ 7, 9, 6, 2, 1]`` es un nivel
+tolerable dado que si se remueve el elemento ``7``, el nivel es
+estrictamente descendente.
 
-1. Utilizando lo aprendido, resuelva este problema
+Hemos recibido `un código <codigo2.py>`_ que verifica si un conjunto de niveles es
+válido o tolerable. 
 
-2. Documente el código
+.. literalinclude:: ../data/codigo2.py
+   :language: PYTHON
+   :linenos:
 
-3. Arregle los errores
+El código contiene un conjunto de niveles de ejemplo, sin embargo, no parece
+dar los resultados esperados. Por favor:
+
+- Corrija los errores que encuentre en el código.
+
+- Escriba comentarios en el código sobre el error que encontró y cómo lo resolvió.
+
+- Escriba los *docstrings* y otros comentarios pertinentes que **mejoren** la lectura del código.
+
+Nuestro cliente nos ha provisto de un `archivo de niveles <niveles.txt>`_, y sus correspondientes status (válido, inválido o tolerable) 
+en `este archivo <status_niveles.txt>`_. 
+
+- Verifique las correcciones realizadas con estos datos. 
+
+

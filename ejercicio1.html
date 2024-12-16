@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Primer problema &mdash; documentación de Examen Final IPyCID - 16/12/2024</title>
+  <title>Análisis de datos deportivos &mdash; documentación de Examen Final IPyCID - 16/12/2024</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
       <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=330c1f8c" />
       <link rel="stylesheet" type="text/css" href="_static/rtd_overrides.css?v=5bd222a9" />
@@ -17,9 +17,12 @@
         <script src="_static/doctools.js?v=888ff710"></script>
         <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
         <script src="_static/translations.js?v=efdbd0b9"></script>
+        <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Índice" href="genindex.html" />
-    <link rel="search" title="Búsqueda" href="search.html" /> 
+    <link rel="search" title="Búsqueda" href="search.html" />
+    <link rel="next" title="Análisis de código: Problema de niveles" href="ejercicio2.html" />
+    <link rel="prev" title="Examen Final IPyICD 2024" href="index.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -43,8 +46,9 @@
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Problemas:</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="ejercicio1_posta.html"> Primer problema</a></li>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#"> Análisis de datos deportivos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ejercicio2.html"> Análisis de código: Problema de niveles</a></li>
 </ul>
 
         </div>
@@ -61,7 +65,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active"> Primer problema</li>
+      <li class="breadcrumb-item active"> Análisis de datos deportivos</li>
       <li class="wy-breadcrumbs-aside">
             <a href="_sources/ejercicio1.rst.txt" rel="nofollow"> Ver código fuente de la página</a>
       </li>
@@ -71,20 +75,51 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="icono-primer-problema">
-<h1><a class="reference internal" href="_images/question-circle.svg"><img alt="icono" src="_images/question-circle.svg" width="52" /></a> Primer problema<a class="headerlink" href="#icono-primer-problema" title="Link to this heading"></a></h1>
-<p>Este es el enunciado del segundo ejercicio</p>
+  <section id="icono-analisis-de-datos-deportivos">
+<h1><a class="reference internal" href="_images/question-circle.svg"><img alt="icono" src="_images/question-circle.svg" width="52" /></a> Análisis de datos deportivos<a class="headerlink" href="#icono-analisis-de-datos-deportivos" title="Link to this heading"></a></h1>
+<p>En los últimos años la liga de básquet estadounidense NBA ha enfocado sus esfuerzos en el análisis de los equipos y su rendimiento en base a estadísticas de distintos aspectos del juego.</p>
+<p>En <a class="reference external" href="nba.html">esta página</a> hay algunas tablas con algunos valores estadísticos de interés en esta liga de básquet. En la tabla que contiene datos relacionados a los equipos los valores que se dan en cada columna corresponden a valores promedio por partido.</p>
+<img alt="_images/screen_nba.png" src="_images/screen_nba.png" />
+<p>Por ejemplo, la octava columna, llamada «PTS» corresponde a los puntos marcados en promedio por partido para cada equipo. Las únicas excepciones obvias son las cantidades que aparecen en las primeras cinco columnas (Ranking, Equipo, PJ, V, D).</p>
+<div class="admonition note">
+<p class="admonition-title">Nota</p>
+<p>La información del significado de cada columna está incluida en el archivo html.</p>
+</div>
+<p>En este ejercicio el objetivo es analizar los datos de la página web utilizando lo aprendido en el curso:</p>
 <ol class="arabic simple">
-<li><p>Utilizando lo aprendido, resuelva este problema</p></li>
-<li><p>Documente el código</p></li>
-<li><p>Arregle los errores</p></li>
+<li><p>Utilizando técnicas de <em>web scrapping</em> extraiga la información de la última tabla de la página, correspondientes a estadísticas de equipos.</p></li>
+<li><p>Asigne la información a un <em>dataframe</em> de pandas y escríbala en formato <em>json</em> en un archivo llamado estadísticas.json</p></li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Nota</p>
+<p>Si no puede realizar los puntos anteriores, lea los datos relevantes del <a class="reference external" href="datos_nba.dat">archivo de datos</a> y utilícelos para completar los puntos siguientes.</p>
+</div>
+<ol class="arabic" start="3">
+<li><p>Analice los datos: calcule las siguientes cantidades:</p>
+<ol class="loweralpha simple">
+<li><p>El porcentaje de victorias de cada equipo, respecto a su valor medio.
+Si el valor medio de Porcentaje de Victoria de todos los equipos es <span class="math notranslate nohighlight">\(VM\)</span> esta cantidad se calcula como:
+$$ \frac{\text{Porcentaje Victoria} - VM}{VM} $$.</p></li>
+<li><p>El total de minutos jugados por cada equipo, respecto a su valor medio.</p></li>
+<li><p>Grafique los resultados de los puntos anteriores, obteniendo un gráfico similar al que se muestra.</p></li>
+</ol>
+<img alt="_images/ejercicio1a.png" src="_images/ejercicio1a.png" />
+</li>
+<li><p>Se propone una medida de la eficiencia ofensiva de un equipo, calculada mediante la fórmula</p>
+<p>$$ \text{eficiencia ofensiva} = 2 \times TA\% \times TI + 3 \times 3P\% \times 3PI + 1 \times TL\% \times TLI $$.</p>
+<p>Calcular y graficar dicha cantidad, ordenando los equipos de menor a mayor eficiencia. Se espera un gráfico similar al que se muestra a continuación</p>
+<img alt="_images/ejercicio1b.png" src="_images/ejercicio1b.png" />
+</li>
 </ol>
 </section>
 
 
            </div>
           </div>
-          <footer>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Pie de página">
+        <a href="index.html" class="btn btn-neutral float-left" title="Examen Final IPyICD 2024" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+        <a href="ejercicio2.html" class="btn btn-neutral float-right" title="Análisis de código: Problema de niveles" accesskey="n" rel="next">Siguiente <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
 
   <hr/>
 

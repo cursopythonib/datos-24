@@ -1,15 +1,48 @@
-|icono| Primer problema
-========================
+|icono| Análisis de datos deportivos
+====================================
 
 .. |icono| image:: _static/question-circle.svg
 	   :width: 52
 
-Este es el enunciado del segundo ejercicio
+En los últimos años la liga de básquet estadounidense NBA ha enfocado sus esfuerzos en el análisis de los equipos y su rendimiento en base a estadísticas de distintos aspectos del juego.
 
-1. Utilizando lo aprendido, resuelva este problema
+En `esta página <nba.html>`_ hay algunas tablas con algunos valores estadísticos de interés en esta liga de básquet. En la tabla que contiene datos relacionados a los equipos los valores que se dan en cada columna corresponden a valores promedio por partido.
 
-2. Documente el código
+.. image:: _static/screen_nba.png
 
-3. Arregle los errores
+Por ejemplo, la octava columna, llamada "PTS" corresponde a los puntos marcados en promedio por partido para cada equipo. Las únicas excepciones obvias son las cantidades que aparecen en las primeras cinco columnas (Ranking, Equipo, PJ, V, D).
+
+.. note::
+   La información del significado de cada columna está incluida en el archivo html.
 
 
+En este ejercicio el objetivo es analizar los datos de la página web utilizando lo aprendido en el curso:   
+
+1. Utilizando técnicas de *web scrapping* extraiga la información de la última tabla de la página, correspondientes a estadísticas de equipos.
+
+2. Asigne la información a un *dataframe* de pandas y escríbala en formato *json* en un archivo llamado estadísticas.json
+
+.. note::
+   Si no puede realizar los puntos anteriores, lea los datos relevantes del `archivo de datos <datos_nba.dat>`_ y utilícelos para completar los puntos siguientes.
+
+
+
+3. Analice los datos: calcule las siguientes cantidades:
+
+   a. El porcentaje de victorias de cada equipo, respecto a su valor medio.
+      Si el valor medio de Porcentaje de Victoria de todos los equipos es $VM$ esta cantidad se calcula como:
+      $$ \frac{\text{Porcentaje Victoria} - VM}{VM} $$.
+
+   b. El total de minutos jugados por cada equipo, respecto a su valor medio.
+
+   c. Grafique los resultados de los puntos anteriores, obteniendo un gráfico similar al que se muestra.
+
+   .. image:: _static/ejercicio1a.png
+
+4. Se propone una medida de la eficiencia ofensiva de un equipo, calculada mediante la fórmula 
+
+   $$ \\text{eficiencia ofensiva} = 2 \\times TA\\% \\times TI + 3 \\times 3P\\% \\times 3PI + 1 \\times TL\\% \\times TLI $$.
+	 
+   Calcular y graficar dicha cantidad, ordenando los equipos de menor a mayor eficiencia. Se espera un gráfico similar al que se muestra a continuación
+
+   .. image:: _static/ejercicio1b.png

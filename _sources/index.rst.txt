@@ -13,6 +13,14 @@
 
 El examen final consiste en la resolución de dos problemas.
 
+El horario del examen será de 16:00 a 19:00 hs.
+
+Los ejercicios deben entregarse subiendo los códigos al classroom del curso. 
+
+El código del primer ejercicio puede ser un Jupyter notebook (**ej1_ApellidoNombre.ipynb**) o un script de Python (**ej1_ApellidoNombre.py**). 
+
+El segundo ejercicio debe ser entregado como el script de Python, **ej2_ApellidoNombre.py**.
+
 
 .. raw:: html
 
@@ -23,8 +31,8 @@ El examen final consiste en la resolución de dos problemas.
               <div class="card text-center intro-card shadow">
                 <img src="_static/question-circle.svg" class="card-img-top" alt="fas chart-line icon" width="60">
                 <div class="card-body flex-fill">
-                  <h5 class="card-title">Ejercicio 1</h5>
-                  <p class="card-text">Este es un ejercicio que se nos ocurrió. Realizará un programa para hacer algo muy interesante.</p>
+                  <h5 class="card-title">Análisis de datos</h5>
+                  <p class="card-text">Ejercicio de análisis de datos estadísticos desde una página web. Realizará un pequeño programa para obtener los datos, realizar un análisis preliminar y graficar los resultados.</p>
                 </div>
               </span></a>
               </div>
@@ -35,8 +43,8 @@ El examen final consiste en la resolución de dos problemas.
         <div class="card text-center intro-card shadow">
            <img src="_static/question-circle.svg" class="card-img-top" alt="fas chart-line icon" width="60">
                 <div class="card-body flex-fill">
-                  <h5 class="card-title">Ejercicio 2</h5>
-                  <p class="card-text">Este es un ejercicio que se nos ocurrió. Realizará un programa para hacer algo muy interesante.</p>
+                  <h5 class="card-title">Análisis de código</h5>
+                  <p class="card-text">Nos han contratado para analizar un problema que ha sido parcialmente resuelto por el cliente. En este ejercicio debe analizar el código del cliente, encontrar los errores y explicar su funcionamiento.</p>
                 </div>
           </span></a>
           </div>
